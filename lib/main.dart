@@ -40,4 +40,16 @@ void main() {
   if (passedInMathAndEnglish) {
     print("Yes he passed succesfully");
   }
+
+  //Else if
+  //else if statement is used when we have multiple conditions.
+  //it checks all the conditions one by one until it finds a true value.
+  String TrafficLight = "Y";
+  if (TrafficLight == 'R') {
+    print("Green");
+  } else if (TrafficLight == 'Y') {
+    print("Yellow");
+  } else {
+    print("Green");
+  }
 }
