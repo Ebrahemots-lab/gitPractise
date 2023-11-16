@@ -34,6 +34,7 @@ void main() {
   //Logical Operator && => and || => or.
   //The logical operator works like this:
   //if both of them are true, it will return true.
+  /** 
   int Math = 10;
   int English = 30;
   bool passedInMathAndEnglish = Math >= 20 || English >= 30;
@@ -41,9 +42,12 @@ void main() {
     print("Yes he passed succesfully");
   }
 
+  */
+
   //Else if
   //else if statement is used when we have multiple conditions.
   //it checks all the conditions one by one until it finds a true value.
+  /** 
   String TrafficLight = "Y";
   if (TrafficLight == 'R') {
     print("Green");
@@ -51,5 +55,23 @@ void main() {
     print("Yellow");
   } else {
     print("Green");
+  }
+
+  */
+
+//switch Case
+//It used to compare Codition but it go to the case Directly unless if
+// if will go throuh each condition..
+  int Grade = 1;
+  switch (Grade) {
+    case >= 10 && <= 20:
+      print("The grade is between 10 and 20");
+      break;
+    case > 20 && <= 30:
+      print("Grade is larger than 20 and smaller than 30");
+      break;
+
+    default:
+      print("The Grader is larger than 30");
   }
 }
