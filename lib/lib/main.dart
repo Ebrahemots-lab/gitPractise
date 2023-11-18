@@ -38,13 +38,20 @@ void main() {
   //   print(D);
   // }
 
-  Map<String, int> StudentInformation = {
-    'Ebrahem': 25,
-    'Ahraf': 55,
-    'hamida': 40
-  };
+  // Map<String, int> StudentInformation = {
+  //   'Ebrahem': 25,
+  //   'Ahraf': 55,
+  //   'hamida': 40
+  // };
 
-  for (MapEntry<String, int> Info in StudentInformation.entries) {
-    print('$Info.key $Info.value');
-  }
+  // for (MapEntry<String, int> Info in StudentInformation.entries) {
+  //   print('$Info.key $Info.value');
+  // }
+
+//Foreach loop
+  List<String> names = ['ebrahem', 'ashraf', 'ahmed', 'alhebashy'];
+  List<String> names2 = [];
+  names.forEach((var item) {
+    print(item);
+  });
 }
