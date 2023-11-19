@@ -49,9 +49,23 @@ void main() {
   // }
 
 //Foreach loop
-  List<String> names = ['ebrahem', 'ashraf', 'ahmed', 'alhebashy'];
-  List<String> names2 = [];
-  names.forEach((var item) {
-    print(item);
-  });
+  // List<String> names = ['ebrahem', 'ashraf', 'ahmed', 'alhebashy'];
+  // List<String> names2 = [];
+  // names.forEach((var item) {
+  //   print(item);
+  // });
+
+  print(returnFinalPrice(100, 10));
+}
+
+//Optional Prameter..
+//if we don't need to put a default value to user we put the variable between []..
+//then we convert the variable to nullable value..
+//then we check if the variable is null replace it's value with 0;
+//another Solution we set the default value = 0
+double returnFinalPrice(double price, [double disccount = 0]) {
+  //disccount = disccount ?? 0;
+  double finalPrice = price - (price * disccount / 100);
+
+  return finalPrice;
 }
